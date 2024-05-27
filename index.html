@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html  lang="pt_BR" >
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWAKEN</title>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+    <link rel="icon" href="./assets/fotos/iconp.png">
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/stylebutton.css">
+    <link rel="stylesheet" href="./text/csshake.min.css">
+    <link rel="stylesheet" href="./styles/responsividade.css">
+    <link rel="stylesheet" href="./styles/Mobile.css">
+    <link rel="stylesheet" href="./back.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <style>
+      .container-inicial {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          width: 100%;
+      }
+
+      .container-itens {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+
+      .text {
+          margin-bottom: 20px;
+      }
+
+      .btn {
+          margin-top: 20px;
+      }
+
+    </style>
+  </head>
+  <body class="scrollDegrade dark-mode" >
+
+    
+    <div class="fab"  ontouchstart="">
+      <a  class="main help" href="./login.php" target="_blank">
+          <img src="./assets/fotos/atendimento-ao-cliente.png" alt="">
+      </a>
+    </div>
+
+    <header id="header">
+
+      <nav class="container">
+
+        <a class="logo" href="#">AWA<span>KEN</span></a>
+        <!-- menu -->
+        <div class="menu">
+
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <!--
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+
+             -->
+            <li><a class="title" href="#contact">Contato</a></li>
+            
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+      
+    </header>
+    
+    <main>
+      <!-- HOME --> 
+      <section class="section" id="home" style="position: relative; display: flex; align-items: center; justify-content: center; height: 100vh;">
+        <div class="background-image" style="position: absolute; top: 80px; left: 0; width: 100%; height: 75%; background-image: url('assets/fotos/recrutamento-e-selecao-de-pessoas.png'); background-size: cover; background-position: center; z-index: 1;">
+            <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 255, 0.6);"></div>
+        </div>
+        <div class="container-itens" style="position: relative; z-index: 2;">
+            <div class="container-inicial">
+                <div class="text" style="display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+                    <h2 class="title" style="font-size: 44px; letter-spacing: 4px; color: white;">PLATAFORMA INTELIGENTE DE SELEÇÃO</h2>
+                </div>
+                <div class="botao" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <a href="#" class="btn btn-white btn-animate" style="width: 35%; text-align: center;">Faça um Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+      <div class="divider-1"></div>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image" style="width: 550px;">
+            <!-- <img
+              class="img img-respo"
+              src="./assets/fotos/CONTROLTECH.png"
+              alt="logo da empresa CONTROLTECH, com cores azul e ciano, ela contem uma letra c e um circulo pequeno
+              com alguns detalhes pequenos."
+            /> -->
+          </div>
+          <div class="text tex-respo" style="position: relative; left: 66px;">
+            <h2 class="title title2">Sobre nós</h2>
+            <p class="p cor" style="font-size: 20px;">
+              Somos uma plataforma de recrutamento que utiliza análise de linguagem neural
+              para avaliar currículos e perfis de cadidatos, tornando o processo de seleção
+              mais eficiente e objetivo. Nosso objetivo é simplificar e agilizar o recrutamento,
+              conectando empresas aos melhores talentos de forma rápida e precisa
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!-- SERVICES -->
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title title-service">Serviços</h2>
+            <p class="subtitle cor" >
+              Com mais de 1 ano no mercado, a AWAKEN já conquistou clientes em diversas localidades, oferecendo soluções para otimizar processos de recrutamento e seleção. Nossa plataforma está focada em conectar talentos às melhores oportunidades de carreira, simplificando o processo de contratação para empresas e candidatos.
+            </p>
+
+
+          </header>
+          <div class="cards grid cards-respo">
+            <!--criar div -->
+            <div class="card  card-respo">
+              <div class="assets">
+                <i>
+                  <img  src="./assets/fotos/rede.png" 
+                  alt="imagem lustrativa sobre o serviço de redes">
+                </i>
+                <h3 class="title nome" >Avaliação de Competências</h3>
+                </p>
+                <div class="content">
+                <p class="size">
+                  Avalie habilidades específicas dos candidatos com testes adaptáveis e personalizados. Identifique talentos que se destacam em competências essenciais para cada vaga
+                </div>
+              </div>
+
+            </div>
+            <div class="card card-2">
+              <div class="assets">
+
+                <i>
+                  <img class="assets" src="./assets/fotos/manutencao.png" 
+                  alt=" imagem lustrativa sobre o serviço de manutenção ">
+                </i>
+                <h3 class="title">Análise de Currículos</h3>
+                <p>Utilize nossa tecnologia avançada para analisar currículos automaticamente. Identifique candidatos qualificados de forma rápida e eficiente, economizando tempo valioso de recrutamento. 
+                </p>
+              </div>
+            </div>
+            
+            <div class="card card-2">
+              <div class="assets">
+                <i >
+                  <img class="assets" src="./assets/fotos/suporte.png" 
+                  alt="imagem lustrativa sobre o serviço de suporte">
+                </i>
+                <h3 class="title">Recrutamento Baseado em Dados</h3>
+                <p>
+                  Aproveite o poder dos dados para recrutar com mais inteligência. Nossa plataforma utiliza análise de dados para recomendar candidatos com base em métricas de sucesso passado.
+              </div>
+            </div>
+
+            <div class="card card-2">
+              <div class="assets">
+                <i >
+                  <img class="assets" src="./assets/fotos/iventario.png" 
+                  alt="imagem lustrativa sobre o serviço de inventario">
+                </i>
+                <h3 class="title">Gestão de Talentos</h3>
+                <p>
+                  Acompanhe o desempenho dos funcionários, identifique talentos promissores e promova o desenvolvimento de carreira. Mantenha sua equipe motivada e engajada para alcançar o sucesso.
+                </p>
+              </div>
+            </div>
+
+            <div class="card card-2">
+              <div class="assets">
+                <i >
+                  <img class="assets" src="./assets/fotos/estruturado.png" 
+                  alt="imagem lustrativa sobre o serviço de Cabeamento estruturado">
+                </i>
+                <h3 class="title"> Integração de Funcionários</h3>
+                <p>
+                    Facilite o processo de integração de novos funcionários com nossa plataforma intuitiva. Forneça informações essenciais sobre a empresa e promova uma transição suave para novos colaboradores.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <div class="divider-1"></div>
+      
+      
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container grid container-respo">
+          <div class="text text-contact">
+            <h2 class="title title-contact">Entre em contato com a gente!</h2>
+            <p class="p-contact cor">
+              Entre em contato com a AWAKEN, queremos tirar suas dúvidas,
+              ouvir suas críticas e sugestões.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5581991802358&text=Oi! Gostaria de contratar um dos serviços da sua empresa."
+              class="button btn btn-animate btn-white"
+              target="_blank"
+              ><i class="icon-whatsapp  "></i> Entrar em contato</a
+            >
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li class="cor"><i class="icon-phone" alt="telefone da empresa"></i> 81 99180-2358</li>
+              <li class="cor"><i class="icon-map-pin"></i> R. Amauri Souza, 346</li>
+              <li class="cor"><i class="icon-mail"></i> contato@awaken.com.br</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+    </main>
+
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">AWA<span>KEN</span>.</a>
+          <p class="cor">©2022 AWAKEN.</p>
+          <p class="cor">Todos os direitos reservados.</p>
+        </div>
+
+        <div class="social grid">
+          <a href="https://instagram.com/controltechh" target="_blank">
+            <i class="icon-instagram"></i>
+          </a>
+          <a href="https://facebook.com/Controltech" target="_blank">
+            <i class="icon-facebook"></i
+          ></a>
+          <a href="https://youtube.com/controllteech" target="_blank"
+            ><i class="icon-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main.js -->
+    <script src="./js/main.js"></script>
+
+    <!--Modo Escuro
+    
+    <script src="darkMode.js"></script>
+    <script  src =" https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js " > </script> 
+    
+    -->
+    
+  
+  </script >
+  </body>
+</html>
