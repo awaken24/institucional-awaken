@@ -57,50 +57,40 @@
       .btn {
           margin-top: 20px;
       }
-
+      @media (max-width: 768px) {
+        #contact .grid {
+          flex-direction: column;
+        }        
+      }
     </style>
   </head>
   <body class="scrollDegrade dark-mode" >
-
-    
     <div class="fab"  ontouchstart="">
       <a  class="main help" href="./login.php" target="_blank">
           <img src="./assets/fotos/atendimento-ao-cliente.png" alt="">
       </a>
     </div>
-
     <header id="header">
-
       <nav class="container">
-
-        <a class="logo" href="#">AWA<span>KEN</span></a>
-        <!-- menu -->
+        <a class="logo" href="#">
+          <img style="width: 70px; height: 45px;" src="./assets/fotos/awaken png.png" alt="Awaken Logo">
+        </a>
         <div class="menu">
-
           <ul class="grid">
             <li><a class="title" href="#home">Início</a></li>
             <li><a class="title" href="#about">Sobre</a></li>
             <li><a class="title" href="#services">Serviços</a></li>
-            <!--
-            <li><a class="title" href="#testimonials">Depoimentos</a></li>
-
-             -->
             <li><a class="title" href="#contact">Contato</a></li>
-            
           </ul>
         </div>
-        <!-- /menu -->
         <div class="toggle icon-menu"></div>
         <div class="toggle icon-close"></div>
       </nav>
-      
     </header>
-    
     <main>
-      <!-- HOME --> 
       <section class="section" id="home" style="position: relative; display: flex; align-items: center; justify-content: center; height: 100vh;">
-        <div class="background-image" style="position: absolute; top: 80px; left: 0; width: 100%; height: 75%; background-image: url('assets/fotos/recrutamento-e-selecao-de-pessoas.png'); background-size: cover; background-position: center; z-index: 1;">
-            <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 255, 0.6);"></div>
+        <div class="background-image" style="position: absolute; top: 80px; left: 0; width: 100%; height: 75%; background-image: url('assets/fotos/recrutamento-e-selecao-de-pessoas.jpg'); background-size: cover; background-position: center; z-index: 1;">
+            <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
         </div>
         <div class="container-itens" style="position: relative; z-index: 2;">
             <div class="container-inicial">
@@ -108,39 +98,27 @@
                     <h2 class="title" style="font-size: 44px; letter-spacing: 4px; color: white;">PLATAFORMA INTELIGENTE DE SELEÇÃO</h2>
                 </div>
                 <div class="botao" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                    <a href="#" class="btn btn-white btn-animate" style="width: 35%; text-align: center;">Faça um Orçamento</a>
+                    <a href="#" class="btn btn-white btn-animate" style="width: 35%; text-align: center;">Entre em contato</a>
                 </div>
             </div>
         </div>
     </section>
       <div class="divider-1"></div>
-
-      <!-- ABOUT -->
-      <section class="section" id="about">
-        <div class="container grid">
-          <div class="image" style="width: 550px;">
-            <!-- <img
-              class="img img-respo"
-              src="./assets/fotos/CONTROLTECH.png"
-              alt="logo da empresa CONTROLTECH, com cores azul e ciano, ela contem uma letra c e um circulo pequeno
-              com alguns detalhes pequenos."
-            /> -->
-          </div>
-          <div class="text tex-respo" style="position: relative; left: 66px;">
-            <h2 class="title title2">Sobre nós</h2>
-            <p class="p cor" style="font-size: 20px;">
-              Somos uma plataforma de recrutamento que utiliza análise de linguagem neural
-              para avaliar currículos e perfis de cadidatos, tornando o processo de seleção
-              mais eficiente e objetivo. Nosso objetivo é simplificar e agilizar o recrutamento,
-              conectando empresas aos melhores talentos de forma rápida e precisa
+      <section class="section" id="about" style="background: #e9e9e9;">
+        <div class="container grid sobre-nos">
+          <div class="text tex-respo">
+              <h2 class="title title2">Sobre nós</h2>
+              <p class="p cor">
+                Somos uma plataforma de recrutamento que utiliza análise de linguagem neural
+                para avaliar currículos e perfis de candidatos, tornando o processo de seleção
+                mais eficiente e objetivo. Nosso objetivo é simplificar e agilizar o recrutamento,
+                conectando empresas aos melhores talentos de forma rápida e precisa.
             </p>
-          </div>
         </div>
-      </section>
-
+      </div>
+    </section>
+    </section>
       <div class="divider-2"></div>
-
-      <!-- SERVICES -->
       <section class="section" id="services">
         <div class="container grid">
           <header>
@@ -148,11 +126,8 @@
             <p class="subtitle cor" >
               Com mais de 1 ano no mercado, a AWAKEN já conquistou clientes em diversas localidades, oferecendo soluções para otimizar processos de recrutamento e seleção. Nossa plataforma está focada em conectar talentos às melhores oportunidades de carreira, simplificando o processo de contratação para empresas e candidatos.
             </p>
-
-
           </header>
           <div class="cards grid cards-respo">
-            <!--criar div -->
             <div class="card  card-respo">
               <div class="assets">
                 <i>
@@ -166,11 +141,9 @@
                   Avalie habilidades específicas dos candidatos com testes adaptáveis e personalizados. Identifique talentos que se destacam em competências essenciais para cada vaga
                 </div>
               </div>
-
             </div>
             <div class="card card-2">
               <div class="assets">
-
                 <i>
                   <img class="assets" src="./assets/fotos/manutencao.png" 
                   alt=" imagem lustrativa sobre o serviço de manutenção ">
@@ -180,7 +153,6 @@
                 </p>
               </div>
             </div>
-            
             <div class="card card-2">
               <div class="assets">
                 <i >
@@ -192,7 +164,6 @@
                   Aproveite o poder dos dados para recrutar com mais inteligência. Nossa plataforma utiliza análise de dados para recomendar candidatos com base em métricas de sucesso passado.
               </div>
             </div>
-
             <div class="card card-2">
               <div class="assets">
                 <i >
@@ -205,7 +176,6 @@
                 </p>
               </div>
             </div>
-
             <div class="card card-2">
               <div class="assets">
                 <i >
@@ -218,17 +188,12 @@
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
       <div class="divider-1"></div>
-      
-      
-
-      <!-- CONTACT -->
       <section class="section" id="contact">
-        <div class="container grid container-respo">
+        <div class="container grid container-respo" style="display: flex; justify-content: space-between;">
           <div class="text text-contact">
             <h2 class="title title-contact">Entre em contato com a gente!</h2>
             <p class="p-contact cor">
@@ -242,7 +207,6 @@
               ><i class="icon-whatsapp  "></i> Entrar em contato</a
             >
           </div>
-
           <div class="links">
             <ul class="grid">
               <li class="cor"><i class="icon-phone" alt="telefone da empresa"></i> 81 99180-2358</li>
@@ -252,18 +216,17 @@
           </div>
         </div>
       </section>
-
       <div class="divider-1"></div>
     </main>
-
     <footer class="section">
       <div class="container grid">
         <div class="brand">
-          <a class="logo logo-alt" href="#home">AWA<span>KEN</span>.</a>
+          <a class="logo" href="#">
+            <img style="width: 12vw; height: 10vh;" src="./assets/fotos/awaken png.png" alt="Awaken Logo">
+          </a>
           <p class="cor">©2022 AWAKEN.</p>
           <p class="cor">Todos os direitos reservados.</p>
         </div>
-
         <div class="social grid">
           <a href="https://instagram.com/controltechh" target="_blank">
             <i class="icon-instagram"></i>
@@ -277,26 +240,10 @@
         </div>
       </div>
     </footer>
-
     <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
-
-    <!-- swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- main.js -->
-    <script src="./js/main.js"></script>
-
-    <!--Modo Escuro
-    
-    <script src="darkMode.js"></script>
-    <script  src =" https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js " > </script> 
-    
-    -->
-    
-  
+    <script src="./js/main.js"></script>  
   </script >
   </body>
 </html>

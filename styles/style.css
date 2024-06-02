@@ -498,7 +498,7 @@ nav.show div.icon-close {
 
 .card p {
   transition: 0.5s;
-  text-align: justify;
+  text-align: center;
 }
 
 .assest > img {
@@ -674,8 +674,6 @@ footer i {
 footer .social {
   grid-auto-flow: column;
   width: fit-content;
-  
-  
 }
 
 footer .social a {
