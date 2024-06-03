@@ -49,6 +49,14 @@
         flex-wrap: wrap;
       }
 
+      .container-inicial .botao a {
+          width: 35%;
+      }
+
+      nav .logo img {
+        width: 70px;
+        height: 45px;
+      }
 
       .text {
           margin-bottom: 20px;
@@ -60,8 +68,30 @@
       @media (max-width: 768px) {
         #contact .grid {
           flex-direction: column;
-        }        
+        }
+        .container-inicial .botao a {
+          width: 55%;
+        }
+
+        .container .logo {
+          margin-left: 15px;
+        }
+
+        nav .menu {
+          margin-right: 13px;
+        }
+        nav .menu ul {
+          gap: 10px;
+        }
+        nav .logo img {
+          width: 70px;
+          height: 45px;
+        }
+        #about .text {
+          margin-left: 0;
+        }
       }
+
     </style>
   </head>
   <body class="scrollDegrade dark-mode" >
@@ -73,10 +103,10 @@
     <header id="header">
       <nav class="container">
         <a class="logo" href="#">
-          <img style="width: 70px; height: 45px;" src="./assets/fotos/awaken png.png" alt="Awaken Logo">
+          <img src="./assets/fotos/awaken png.png" alt="Awaken Logo">
         </a>
         <div class="menu">
-          <ul class="grid">
+          <ul>
             <li><a class="title" href="#home">Início</a></li>
             <li><a class="title" href="#about">Sobre</a></li>
             <li><a class="title" href="#services">Serviços</a></li>
@@ -98,7 +128,7 @@
                     <h2 class="title" style="font-size: 44px; letter-spacing: 4px; color: white;">PLATAFORMA INTELIGENTE DE SELEÇÃO</h2>
                 </div>
                 <div class="botao" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                    <a href="#" class="btn btn-white btn-animate" style="width: 35%; text-align: center;">Entre em contato</a>
+                    <a href="#" class="btn btn-white btn-animate" style="text-align: center;">Entre em contato</a>
                 </div>
             </div>
         </div>
